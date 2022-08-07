@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url("https://images.alphacoders.com/211/211253.jpg");
+  background-repeat: no-repeat;
+  font-family: 'Orbitron', sans-serif;
+  background-size: cover;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.calculator-buttons{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 330px;
+  user-select: none;
+}
+
+.calculator-buttons button{
+  font-family: 'Orbitron', sans-serif;
+  width: 100px;
+  height: 80px;
+  margin: 5px;
+  text-align: center;
+}
+
+#display{
+  width: 320px;
+  height: 100px;
+  padding: 25px 10px 0px 0px;
+  margin-left: 5px;
+  font-size: 30pt;
+  text-align: right;
+  color: #9be1ff;
+  text-shadow: 0 0 8px #7dbeff;
+  background: rgba( 255, 255, 255, 0.1 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 15px );
+  -webkit-backdrop-filter: blur( 15px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.calculator-button{
+  background: rgba( 255, 255, 255, 0.2 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  font-size: 40pt;
+  color: white;
+}
+
+.calculator-button:hover{
+  border: 1px solid #7dbeff;
+  box-shadow: 0 0 8px #88c3fe;
+}
+
+.calculator-button:active{
+  transform: scale(0.98);
+  text-shadow: 0 0 8px #88c3fe;
+}
